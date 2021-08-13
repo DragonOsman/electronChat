@@ -28,7 +28,7 @@ app.whenReady().then(createWindow);
 
 ipcMain.on("notify", () => {
   e_notification.sendNotification("My custom message!");
-})
+});
 
 app.on("window-all-closed", () => {
   // if not running on Mac
