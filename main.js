@@ -30,7 +30,8 @@ ipcMain.on("notify", (_, message) => {
   new Notification({
     title: "Notification",
     body: message
-  }).show();
+  })
+  .show();
 });
 
 app.on("window-all-closed", () => {
