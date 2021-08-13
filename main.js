@@ -26,7 +26,7 @@ if (isDev) {
 
 app.whenReady().then(createWindow);
 
-ipcMain.on("e_notification", () => {
+ipcMain.on("notify", () => {
   e_notification.sendNotification("My custom message!");
 })
 
