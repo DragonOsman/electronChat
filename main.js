@@ -27,7 +27,7 @@ if (isDev) {
 app.whenReady().then(createWindow);
 
 ipcMain.on("e_notification", () => {
-  e_noification.sendNotification("My custom message!");
+  e_notification.sendNotification("My custom message!");
 })
 
 app.on("window-all-closed", () => {
