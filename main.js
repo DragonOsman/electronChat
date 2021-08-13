@@ -1,5 +1,5 @@
 // Main Process (responsible for running main file (in this case main.js))
-const { app, BrowserWindow } = require("electron");
+const { app, BrowserWindow, ipcMain } = require("electron");
 const path = require("path");
 const isDev = !app.isPackaged;
 
@@ -25,6 +25,10 @@ if (isDev) {
 }
 
 app.whenReady().then(createWindow);
+
+ipcMain.on("e_notification", () => {
+  e_noification.sendNotification("My custom message!");
+})
 
 app.on("window-all-closed", () => {
   // if not running on Mac
