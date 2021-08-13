@@ -28,7 +28,7 @@ app.whenReady().then(createWindow);
 
 ipcMain.on("notify", (_, message) => {
   new Notification({
-    title: "notification",
+    title: "Notification",
     body: message
   }).show();
 });
