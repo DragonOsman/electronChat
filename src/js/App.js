@@ -1,13 +1,6 @@
 import React from "react";
 
 export default function App() {
-  const title = "Hello World";
-  const enhancedTitle = `${title} - React App!`;
-
-  const sendNotification = () => {
-    e_notification.sendNotification("My custom message!");
-  };
-
   return (
     <div className='content-wrapper'>
       {/* ########## NAVBAR START ############ */}
